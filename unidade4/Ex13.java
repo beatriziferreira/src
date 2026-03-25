@@ -20,16 +20,13 @@ public class Ex13 {
         int cartasBoas = 0;
 
         if (valor1 == 1 || valor1 == 2 || valor1 == 3) {
-            cartasBoas = cartasBoas + 1;
+            cartasBoas = cartasBoas + 1;}
            
-            if (valor2 == 1 || valor2 == 2 || valor2 == 3) {
-                cartasBoas = cartasBoas + 1; 
+        if (valor2 == 1 || valor2 == 2 || valor2 == 3) {
+            cartasBoas = cartasBoas + 1; }
            
-                if (valor3 == 1 || valor3 == 2 || valor3 == 3){
-                    cartasBoas = cartasBoas + 1;
-                }
-            }
-        }
+        if (valor3 == 1 || valor3 == 2 || valor3 == 3){
+            cartasBoas = cartasBoas + 1;}
         
         if (cartasBoas == 1) {
             System.out.println("TRUCO!");
@@ -37,6 +34,7 @@ public class Ex13 {
             System.out.println("SEIS!");
         } else if (cartasBoas == 3) {
             System.out.println("NOVE!");}
+            scan.close();
         }
     }
 
