@@ -31,7 +31,7 @@ public class Ex24 {
             case 1:
                 System.out.println("Ordem crescente:");
                 for (int v : valores) {
-                    System.out.print(v + " ");
+                System.out.print(v + " ");
                 }
                 break;
 

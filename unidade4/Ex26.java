@@ -12,6 +12,7 @@ public class Ex26 {
         
         System.out.println("Escolha uma opção acima: ");
         char opção = scan.next().charAt(0);
+        opção = Character.toUpperCase(opção);
 
         switch (opção) {
             case 'T':
@@ -49,6 +50,8 @@ public class Ex26 {
                 double areaC = raio * raio * 3.1415926;
                 System.out.println(String.format("%.2f", areaC));
                 break;
+            default:
+                System.out.println("Opção inválida!");
 
         } scan.close();
     }
