@@ -10,9 +10,9 @@ public class Ex7 {
             System.out.println("O valor do frete é R$ " + valorFrete);
         } else {
             double pesoExcedido = peso - 50;
-            double adicional = (pesoExcedido / 20) + 1 ;
+            double adicional = (pesoExcedido/20) + 1;
             double valorFrete = 0.45 + (adicional * 0.45);
-            System.out.println("O valor do frete é de R$: " + valorFrete);
+            System.out.println("O valor do frete é de R$: " + String.format("%.2f", valorFrete));
         } 
         scan.close();
     

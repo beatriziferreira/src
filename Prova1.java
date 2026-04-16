@@ -88,9 +88,8 @@ public class Prova1 {
                 System.out.println("Excesso: " + pesoExcedido + " kg");
                 System.out.println("Taxa adicional: " + taxa + " R$");
                 System.out.println(mensagem);
-            default:
-                System.out.println("Classe inválida!");
-            break;
+                break;
+                
         } scan.close();
     }
 }
