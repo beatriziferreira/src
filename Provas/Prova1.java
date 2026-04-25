@@ -1,5 +1,6 @@
-import java.util.Scanner;
+package provas; 
 
+import java.util.Scanner;
 public class Prova1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
