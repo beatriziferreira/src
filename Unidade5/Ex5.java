@@ -9,19 +9,23 @@ public class Ex5 {
         int n = sc.nextInt();
 
         int termo = 8;
-        int incremento = 6;
         int soma = 0;
 
         for (int i = 1; i <= n; i++) {
 
-            if (i % 2 ==0){
+            if (i % 2 == 0) {
                 termo += 2;
             } else {
-                termo += incremento;
-                incremento = incremento * 2 + 2;
-            } soma += termo;
+                if (i == 1) {
+                    termo = 8;
+                } else {
+                    termo = (termo - 2) * 2;
+                }
+            }
+            soma += termo;
         } System.out.println("Soma: " + soma);
 
         sc.close();
     }
 }
+
