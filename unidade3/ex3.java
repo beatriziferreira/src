@@ -1,4 +1,6 @@
 package unidade3;
+
+
 import java.util.Scanner;
 
 public class ex3 {
