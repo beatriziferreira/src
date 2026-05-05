@@ -12,11 +12,12 @@ public class Ex23 {
         char resposta = 's';
 
         while (resposta == 's' || resposta == 'S') {
-            System.out.print("Digite o nome do vendedor: ");
-            nome = scanner.nextLine();
             if (resposta == 'n' || resposta == 'N') {
                 break;
             } 
+            System.out.print("Digite o nome do vendedor: ");
+            nome = scanner.nextLine();
+ 
             System.out.print("Digite o salário fixo do vendedor: ");
             salario = scanner.nextDouble();
 
@@ -33,6 +34,7 @@ public class Ex23 {
             System.out.println("Total de vendas: " + String.format("%.2f", totalVendas) + " reais");
             System.out.println("Deseja informar outro vendedor? (Digite 'n' para encerrar ou 's' para continuar): ");
             resposta = scanner.next().charAt(0);
+            scanner.nextLine();
         }
         
         scanner.close();}

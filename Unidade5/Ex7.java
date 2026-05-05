@@ -6,10 +6,10 @@ public class Ex7 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        System.out.println("Digite um número real");
+        System.out.println("Insira um número qualquer: ");
         double numero = sc.nextDouble();
-        double maior = numero;
-        double menor = numero;
+        double maior = 0;
+        double menor = 0;
 
         for (int i = 1; i <= n; i++) {
             System.out.print("Digite um valor real: ");

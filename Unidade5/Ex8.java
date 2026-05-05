@@ -6,9 +6,8 @@ public class Ex8 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        System.out.println("Digite um número negativo:");
-        double numero = sc.nextDouble();
-        double menor = numero;
+        double numero = 0;
+        double menor = 0;
         int soma = 0;
         double media = 0;
         int countPositivos = 0;
@@ -25,7 +24,8 @@ public class Ex8 {
                 countPositivos++;
             }
             
-        } media = (double) soma / countPositivos;
+        }
+        media = (double) soma / countPositivos;
         System.out.println("A média dos números positivos é: " + String.format("%.2f", media));
         System.out.println("O menor valor negativo é: " + menor);
         sc.close();
