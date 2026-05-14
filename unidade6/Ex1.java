@@ -13,7 +13,7 @@ public class Ex1 {
             vetor[i] = scan.nextInt();
         }
 
-        for (int i = 0 ; i < vetor.length ; i++){
+        for (int i = vetor.length - 1; i >= 0; i--){
             System.out.println(vetor[i]);
         }
 
