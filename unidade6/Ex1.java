@@ -13,13 +13,15 @@ public class Ex1 {
             vetor[i] = scan.nextInt();
         }
 
+
         System.out.println("Vetor na ordem inversa: ");
-        
-        for (int i = vetor.length - 1; i >= 0; i--) {
+
+        for (int i = vetor.length - 1; i >= 0; i--){
             System.out.println(vetor[i]);
         }
 
         scan.close();
         
     }
+
 }
