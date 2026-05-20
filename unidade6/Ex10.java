@@ -6,7 +6,7 @@ public class Ex10 {
 
     static final int CAPACIDADE = 50;
     static int[] vetor = new int[CAPACIDADE];
-    static int tamanho = 0;
+    static int tamanho = 0; //posição do próximo elemento a ser inserido
 
     public static void main(String[] args) {
 
