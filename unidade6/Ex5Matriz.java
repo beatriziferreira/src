@@ -24,7 +24,13 @@ public class Ex5Matriz {
                     simbolo = Character.toUpperCase(simbolo);
 
                     if (linha >= 0 && linha < 3 && coluna >= 0 && coluna < 3 && (simbolo == 'X' || simbolo == 'O')) {
-                        jogoDaVelha[linha][coluna] = simbolo;
+                        
+                        if (jogoDaVelha[linha][coluna] != '\u0000') {
+                            System.out.println("Posição já ocupada. Tente novamente.");
+                            break;
+                        }
+                        else { jogoDaVelha[linha][coluna] = simbolo; }
+
                         if (verificarVitoria(jogoDaVelha, 'X')) {
                             System.out.println("Jogador X venceu!");
                         } else if (verificarVitoria(jogoDaVelha, 'O')) {
@@ -34,7 +40,6 @@ public class Ex5Matriz {
                         }
                     } else {
                         System.out.println("Entrada inválida. Tente novamente.");
-
                     }
                     break;
                 case 2:
@@ -55,7 +60,8 @@ public class Ex5Matriz {
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        } while (!verificarVitoria(jogoDaVelha, 'X') && !verificarVitoria(jogoDaVelha, 'O') && !verificarEmpate(jogoDaVelha));
+        } while (!verificarVitoria(jogoDaVelha, 'X') && !verificarVitoria(jogoDaVelha, 'O')
+                && !verificarEmpate(jogoDaVelha));
         scan.close();
     }
 
@@ -85,7 +91,6 @@ public class Ex5Matriz {
                 }
             }
         }
-        System.out.println("O jogo empatou!");
         return true;
     }
 }
