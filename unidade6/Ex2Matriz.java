@@ -39,6 +39,6 @@ public class Ex2Matriz {
             System.out.println("Média da prova " + (coluna + 1) + ": " + mediaProva);
         }
 
-
+        sc.close();
     }
 }
