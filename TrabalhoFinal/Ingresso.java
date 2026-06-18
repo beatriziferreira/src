@@ -41,9 +41,10 @@ public class Ingresso {
             }
 
         } else {
+            do{
             System.out.println("Tipo de ingresso inválido. Por favor, escolha 'inteiro' ou 'meia'.");
             tipo = scan.next();
-
+            } while (!tipo.equalsIgnoreCase("meia") && !tipo.equalsIgnoreCase("inteiro") );
         }
     }
 }

@@ -34,34 +34,47 @@ public class Menu {
                     System.out.println(" ");
                     sala.exibirAssentos();
                     System.out.println(" ");
+
                     System.out.println("Informe a fila do assento (0-9): ");
                     fila = scan.nextInt();
-                    if (fila < 0 || fila > 9){
-                        System.out.println("Fila inválida! Tente novamente:");
-                        fila = scan.nextInt();
+                    if (fila < 0 || fila > 9) {
+                        do {
+                            System.out.println("Fila inválida! Tente novamente!");
+                            fila = scan.nextInt();
+                        } while (fila < 0 || fila > 9);
                     }
                     System.out.println("Informe a poltrona (0-9): ");
                     poltrona = scan.nextInt();
-                    if (poltrona < 0 || poltrona > 9){
-                        System.out.println("Poltrona inválida! Tente novamente!");
-                        poltrona = scan.nextInt();
+                    if (poltrona < 0 || poltrona > 9) {
+                        do {
+                            System.out.println("Poltrona inválida! Tente novamente!");
+                            poltrona = scan.nextInt();
+                        } while (poltrona < 0 || poltrona > 9);
+
                     }
 
                     if (sala.verificarAssento(fila, poltrona)) {
+                        do{
                         System.out.println("Assento já ocupado. Por favor, tente novamente.");
                         System.out.println("Informe a fila do assento (0-9): ");
                         fila = scan.nextInt();
-                        if (fila < 0 || fila > 9){
-                        System.out.println("Fila inválida! Tente novamente:");
-                        fila = scan.nextInt();
-                    }
+                        if (fila < 0 || fila > 9) {
+                            do {
+                            System.out.println("Fila inválida! Tente novamente!");
+                            fila = scan.nextInt();
+                        } while (fila < 0 || fila > 9);
+                        }
 
                         System.out.println("Informe a poltrona (0-9): ");
                         poltrona = scan.nextInt();
-                        if (poltrona < 0 || poltrona > 9){
-                        System.out.println("Poltrona inválida! Tente novamente!");
-                        poltrona = scan.nextInt();
-                    }
+                        if (poltrona < 0 || poltrona > 9) {
+                          do {
+                            System.out.println("Poltrona inválida! Tente novamente!");
+                            poltrona = scan.nextInt();
+                        } while (poltrona < 0 || poltrona > 9);
+                        }
+                    } while (sala.verificarAssento(fila,poltrona));
+
                     }
 
                     System.out.println("Informe o tipo de ingresso: ");
@@ -84,6 +97,8 @@ public class Menu {
                         System.out.println(" ");
                     } else if (confirmacao.equalsIgnoreCase("N")) {
                         sala.assentos[fila][poltrona] = false;
+                        System.out.println("Compra cancelada.");
+                        System.out.println(" ");
                     }
 
                     break;
