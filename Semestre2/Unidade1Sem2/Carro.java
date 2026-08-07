@@ -1,4 +1,4 @@
-package Unidade1Sem2;
+package Semestre2.Unidade1Sem2;
 
 public class Carro {
 
