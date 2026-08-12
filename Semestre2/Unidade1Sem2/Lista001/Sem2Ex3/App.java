@@ -1,4 +1,4 @@
-package Semestre2.Unidade1Sem2.Sem2Ex3;
+package Semestre2.Unidade1Sem2.Lista001.Sem2Ex3;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {

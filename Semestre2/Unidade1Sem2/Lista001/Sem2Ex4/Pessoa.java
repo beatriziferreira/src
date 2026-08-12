@@ -1,4 +1,4 @@
-package Semestre2.Unidade1Sem2.Sem2Ex4;
+package Semestre2.Unidade1Sem2.Lista001.Sem2Ex4;
 public class Pessoa {
     String nome;
     double peso;
