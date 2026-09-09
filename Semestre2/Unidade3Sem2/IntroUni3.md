@@ -1,14 +1,9 @@
-# Unidade 1:
+# Unidade 3:
 
 ## Assuntos:
 
-- Programação orientada a objetos
-- Classes e métodos
-- Escopo de variáveis
-- Encapsulamento de dados
-- Construtores
-- Sobeposição de métodos e construtores
-
+- ArrayList
+- Realcionamento entre objetos
 ## Anotações! 
 
 ### Escopo de variáveis:
