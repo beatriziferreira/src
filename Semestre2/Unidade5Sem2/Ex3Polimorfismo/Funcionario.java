@@ -1,4 +1,4 @@
-package Semestre2.Unidade4Sem2.Ex3Polimorfismo;
+package Semestre2.Unidade5Sem2.Ex3Polimorfismo;
 
 public abstract class Funcionario {
     private String nome;
@@ -19,7 +19,7 @@ public abstract class Funcionario {
     public double calcularSalario() {
         return salario;
     }
-     public abstract void imprimeFuncionario();
+    public abstract void imprimeFuncionario();
 
     
 }

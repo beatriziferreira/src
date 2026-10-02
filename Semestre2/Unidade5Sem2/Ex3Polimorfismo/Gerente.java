@@ -1,4 +1,4 @@
-package Semestre2.Unidade4Sem2.Ex3Polimorfismo;
+package Semestre2.Unidade5Sem2.Ex3Polimorfismo;
 
 public class Gerente extends Funcionario {
 
@@ -11,5 +11,9 @@ public class Gerente extends Funcionario {
     public double calcularSalario() {
         return getSalario() + (getSalario() * percentual);
     } 
+
+    public void imprimeFuncionario(){
+        System.out.println(getNome() + " - " + percentual + "%");
+    }
 
 }

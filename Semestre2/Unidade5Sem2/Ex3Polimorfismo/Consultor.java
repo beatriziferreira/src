@@ -1,4 +1,4 @@
-package Semestre2.Unidade4Sem2.Ex3Polimorfismo;
+package Semestre2.Unidade5Sem2.Ex3Polimorfismo;
 
 public class Consultor extends Funcionario {
 
@@ -14,7 +14,11 @@ public class Consultor extends Funcionario {
 
     @Override 
     public double calcularSalario() {
-        return getSalario() + (getViagens() * 100);
+        return getSalario() + (getViagens() * 300);
+    }
+
+    public void imprimeFuncionario(){
+        System.out.println(getNome() + " - " + getViagens() + " viagens");
     }
 
     
